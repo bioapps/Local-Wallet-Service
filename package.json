@@ -1,6 +1,6 @@
 {
-  "name": "Local-Wallet-Service",
-  "version": "1.0.0",
+  "name": "local-wallet-service",
+  "version": "0.1.0",
   "description": "",
   "main": "LocalWalletService.js",
   "scripts": {
