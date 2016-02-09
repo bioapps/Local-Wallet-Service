@@ -1,0 +1,25 @@
+{
+  "name": "Local-Wallet-Service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "LocalWalletService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bioapps/Local-Wallet-Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bioapps/Local-Wallet-Service/issues"
+  },
+  "homepage": "https://github.com/bioapps/Local-Wallet-Service#readme",
+  "dependencies": {
+    "blockchain-wallet-service": "^0.14.1",
+    "blockchain.info": "^2.2.0",
+    "cross-spawn-async": "^2.1.8"
+  }
+}
