@@ -1,7 +1,7 @@
 'use strict';
 
-const spawn = require('cross-spawn-async');
 const blockchain = require('blockchain.info');
+const BlockchainWalletService = require('blockchain-wallet-service');
 
 //
 // Empty wallet
@@ -29,10 +29,10 @@ class LocalWalletService {
 	}
 
 	startLocalBlockchainWalletService() {		
-		this.blockchainWalletServiceProcess = spawn('blockchain-wallet-service', ['start', '--port', this.config.servicePort]);
-
-		this.blockchainWalletServiceProcess.stdout.on('data', buffer => console.info(buffer.toString('utf8')));
-		this.blockchainWalletServiceProcess.stderr.on('data', buffer => console.error(buffer.toString('utf8')));
+		this.blockchainWalletService = BlockchainWalletService.start({
+			port: this.config.servicePort,
+			bind: '127.0.0.1'
+		});
 	}
 
 	//
