@@ -50,7 +50,7 @@ class LocalWalletService {
 				//
 				// Log out wallet by logging in the default wallet
 				//
-				this.loginWallet(defaultWallet);
+				// this.loginWallet(defaultWallet);
 
 				return paymentResponse;
 			})
